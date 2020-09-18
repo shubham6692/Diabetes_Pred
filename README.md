@@ -5,3 +5,4 @@
 ##### Deployed on Heroku
 
 ###### Technologies Used: Jupyter, numpy, pandas, KNN algorithm, Html, Heroku
+
