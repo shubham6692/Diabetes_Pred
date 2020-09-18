@@ -1,0 +1,41 @@
+
+<html lang="en" dir="ltr">
+	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<title>Diabetes Predictor</title>
+ <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d8da3d }
+  </style>
+	</head>
+
+    <body>
+
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor App</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+			{% endif %}
+		</div>
+
+       <div class='footer'>
+           <div class="contact">
+	       
+               <a target="_blank" href="https://github.com/shubham6692"><i class="fa fa-github-square" style="font-size:36px"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/shubham6692"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+           </div>
+           <p class='footer-description'>Made by Shubham Agarwal</p>
+       </div>
+
+	</body>
+</html>

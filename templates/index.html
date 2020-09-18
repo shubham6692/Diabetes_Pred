@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+  <style type="text/css">
+  body {
+    color: purple;
+    background-color: #d8da3d }
+  </style>
+        <title>Diabetes Predictor</title>
+    </head>
+
+    <body>
+
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor App</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+		</br>
+    	</div>
+
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" style="font-size:15pt;" name="pregnancies" placeholder="No. of Pregnancies eg. 0"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="bloodpressure" placeholder="Blood Pressure eg. 80"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="skinthickness" placeholder="Skin Thickness(mm) eg. 20"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="insulin" placeholder="Insulin Level eg. 80"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="bmi" placeholder="BMI (kg/m²) eg. 23.1"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="dpf" placeholder="Pedigree Fun. eg. 0.52"><br>
+                <input class="form-input" type="text" style="font-size:15pt;" name="age" placeholder="Age (years) eg. 34"><br>
+
+        		<input type="submit" style="font-size:20pt;" class="my-cta-button" value="Predict">
+		</br>
+		</br>
+		</br>
+        	</form>
+    	</div>
+
+       <div class='footer'>
+           <div class="contact">
+	       
+               <a target="_blank" href="https://github.com/shubham6692"><i class="fa fa-github-square" style="font-size:36px"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/shubham6692"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+           </div>
+		</br>
+		</br>
+           <p class='footer-description'>Made with Shubham Agarwal</p>
+       </div>
+
+    </body>
+</html>
